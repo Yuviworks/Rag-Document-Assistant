@@ -1,0 +1,54 @@
+Pydantic is a Python library for data validation.
+
+It uses Python type hints to validate input data automatically.
+
+FastAPI uses Pydantic for request validation.
+
+BaseModel
+
+Every model inherits from BaseModel.
+
+Example
+
+class User(BaseModel):
+    name: str
+    age: int
+
+Validation
+
+Pydantic checks whether incoming data matches the expected types.
+
+If validation fails, an error is returned.
+
+Supported Types
+
+- String
+- Integer
+- Float
+- Boolean
+- List
+- Dictionary
+- Optional values
+
+Benefits
+
+- Automatic validation
+- Cleaner code
+- Better error handling
+- JSON serialization
+
+FastAPI Integration
+
+Pydantic models are commonly used for:
+
+- Request bodies
+- Response models
+- Input validation
+- Output serialization
+
+Advantages
+
+- Simple syntax
+- Strong type checking
+- Automatic error messages
+- Easy integration with FastAPI

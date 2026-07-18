@@ -1,0 +1,60 @@
+ChromaDB is an open source vector database designed for AI applications.
+
+It stores embeddings instead of plain text.
+
+Embeddings represent text as numerical vectors.
+
+Important Concepts
+
+Collection
+- Similar to a table in a database.
+
+Document
+- Original text stored in the collection.
+
+Embedding
+- Numerical representation of text.
+
+Metadata
+- Additional information such as file name and source.
+
+Similarity Search
+
+Instead of exact keyword matching, ChromaDB finds documents with similar meanings.
+
+Benefits
+
+- Fast semantic search
+- Easy integration with LangChain
+- Local storage
+- Persistent database
+
+Workflow
+
+Documents
+↓
+
+Chunking
+
+↓
+
+Embeddings
+
+↓
+
+Store in ChromaDB
+
+↓
+
+Similarity Search
+
+↓
+
+Relevant Documents
+
+Common Uses
+
+- Retrieval Augmented Generation
+- AI Chatbots
+- Semantic Search
+- Question Answering Systems

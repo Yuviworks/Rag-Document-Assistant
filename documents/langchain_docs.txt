@@ -1,0 +1,58 @@
+LangChain is a framework for developing applications powered by Large Language Models (LLMs).
+
+It simplifies the development of AI applications by providing reusable components for working with language models, prompts, documents, embeddings, retrieval, and agents.
+
+LangChain applications are context-aware because they can retrieve external information before generating responses.
+
+Core Components of LangChain
+
+1. Model I/O
+- Connects applications with language models.
+- Supports chat models and completion models.
+
+2. Prompt Templates
+- Create reusable prompts with placeholders.
+- Helps generate consistent prompts.
+
+3. Document Loaders
+- Load documents from text files, PDFs, HTML pages, websites, and databases.
+
+4. Text Splitters
+- Split large documents into smaller chunks.
+- Improves retrieval accuracy.
+
+5. Embeddings
+- Convert text into numerical vectors.
+- Similar meanings produce similar vectors.
+
+6. Vector Stores
+- Store embeddings for efficient semantic search.
+- Examples include ChromaDB and FAISS.
+
+7. Retrievers
+- Retrieve relevant document chunks using similarity search.
+
+8. Chains
+- Combine multiple LLM calls into a workflow.
+
+9. Agents
+- Allow the LLM to decide which tools to use.
+
+10. Memory
+- Store previous conversation history.
+
+Retrieval Augmented Generation (RAG)
+
+RAG combines document retrieval with language model generation.
+
+Workflow:
+User Question
+→ Retrieve Relevant Documents
+→ Generate Answer
+
+Benefits of RAG
+
+- Reduces hallucinations
+- Uses external knowledge
+- Provides context-aware answers
+- Improves factual accuracy

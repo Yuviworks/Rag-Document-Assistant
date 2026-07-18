@@ -1,0 +1,60 @@
+FastAPI is a modern Python web framework used for building REST APIs.
+
+It is built using Python type hints and provides high performance.
+
+Features
+
+- Fast execution
+- Automatic API documentation
+- Data validation
+- Easy request handling
+- Asynchronous support
+
+HTTP Methods
+
+GET
+- Retrieve data
+
+POST
+- Create data
+
+PUT
+- Update data
+
+DELETE
+- Delete data
+
+Path Parameters
+
+Used to pass values through URLs.
+
+Example:
+/users/5
+
+Query Parameters
+
+Passed after the question mark.
+
+Example:
+/search?name=python
+
+Request Body
+
+POST requests usually receive data using JSON.
+
+Pydantic models validate incoming requests.
+
+Response Models
+
+FastAPI automatically converts Python objects into JSON responses.
+
+Swagger Documentation
+
+FastAPI automatically creates interactive API documentation.
+
+Common Uses
+
+- Machine Learning APIs
+- AI Applications
+- Backend Services
+- Data APIs

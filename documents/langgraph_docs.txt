@@ -1,0 +1,58 @@
+LangGraph is a framework for building stateful AI workflows using Large Language Models.
+
+It extends LangChain by allowing applications to execute graph-based workflows instead of simple linear chains.
+
+LangGraph is commonly used for AI agents and Retrieval Augmented Generation (RAG) systems.
+
+Important Concepts
+
+State
+- Stores shared information during execution.
+
+StateGraph
+- Defines the complete workflow.
+
+Nodes
+- Individual processing functions.
+
+Examples:
+- Query Analysis
+- Retrieval
+- Document Grading
+- Answer Generation
+
+Edges
+- Define how execution moves from one node to another.
+
+Conditional Edges
+- Route execution depending on conditions.
+
+Example:
+If documents are relevant
+→ Generate Answer
+
+Else
+→ Rewrite Query
+→ Retry Retrieval
+
+Self Reflective RAG
+
+Self Reflective RAG evaluates retrieved documents before generating an answer.
+
+If retrieval quality is poor, the workflow can rewrite the question and perform another retrieval.
+
+Corrective RAG (CRAG)
+
+CRAG improves RAG by:
+- Grading retrieved documents
+- Rewriting queries
+- Retrying retrieval
+- Optionally performing web search
+
+Advantages of LangGraph
+
+- Stateful workflows
+- Retry logic
+- Conditional routing
+- Multi-step reasoning
+- Agent workflows
