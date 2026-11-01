@@ -274,10 +274,10 @@ with st.sidebar:
     st.markdown('<div class="sidebar-label">Add document</div>', unsafe_allow_html=True)
 
     uploaded_file = st.file_uploader(
-        "Upload .txt or .md",
-        type=["txt", "md"],
-        label_visibility="collapsed"
-    )
+    "Upload PDF, TXT, or Markdown",
+    type=["pdf", "txt", "md"],
+    label_visibility="collapsed"
+)
 
     if st.button("⬆  Upload"):
         if uploaded_file:
